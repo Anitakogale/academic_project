@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Voting Eligibility Checker</title>
+</head>
+<body>
+
+    <h2>Check Voting Eligibility</h2>
+
+    <input type="number" id="ageInput" placeholder="Enter your age">
+    <button onclick="checkEligibility()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        // Function to check if age is 18 or older
+        function isEligible(age) {
+            return age >= 18;
+        }
+
+        // Function connected to button
+        function checkEligibility() {
+            let age = parseInt(document.getElementById("ageInput").value);
+            let result = document.getElementById("result");
+
+            if (isNaN(age) || age < 0) {
+                result.textContent = "Please enter a valid age.";
+                return;
+            }
+
+            let eligibility = isEligible(age);
+
+            if (eligibility) {
+                result.textContent = "Eligible to Vote";
+            } else {
+                result.textContent = "Not Eligible to Vote";
+            }
+
+            console.log("Returned value:", eligibility); // Debug output
+        }
+    </script>
+
+</body>
+</html>_
