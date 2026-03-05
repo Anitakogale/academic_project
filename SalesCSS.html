@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales and Profit Report</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b8bec8;
+            color: #454141;
+            margin: 20px;
+            padding: 0;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #c8b6b6;
+            border-radius: 10px;
+            background-color: #aeaaaa;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+        }
+
+        td {
+            background-color: #ecf0f1;
+        }
+
+        /* Rowspan and colspan header styling */
+        .category {
+            background-color: #2980b9;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Hover effect */
+        tr:hover td {
+            background-color: #d6eaf8;
+        }
+
+        /* Footer styling */
+        tfoot td {
+            font-weight: bold;
+            background-color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Total Sales and Profit Report</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th rowspan="2">Product</th>
+                    <th colspan="2">Q1</th>
+                    <th colspan="2">Q2</th>
+                    <th colspan="2">Q3</th>
+                    <th colspan="2">Q4</th>
+                </tr>
+                <tr>
+                    <th>Sales ($)</th>
+                    <th>Profit ($)</th>
+                    <th>Sales ($)</th>
+                    <th>Profit ($)</th>
+                    <th>Sales ($)</th>
+                    <th>Profit ($)</th>
+                    <th>Sales ($)</th>
+                    <th>Profit ($)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="category">Product A</td>
+                    <td>12000</td>
+                    <td>3000</td>
+                    <td>15000</td>
+                    <td>4000</td>
+                    <td>14000</td>
+                    <td>3500</td>
+                    <td>16000</td>
+                    <td>4500</td>
+                </tr>
+                <tr>
+                    <td class="category">Product B</td>
+                    <td>10000</td>
+                    <td>2500</td>
+                    <td>12000</td>
+                    <td>3000</td>
+                    <td>13000</td>
+                    <td>3200</td>
+                    <td>14000</td>
+                    <td>3600</td>
+                </tr>
+                <tr>
+                    <td class="category">Product C</td>
+                    <td>9000</td>
+                    <td>2000</td>
+                    <td>11000</td>
+                    <td>2700</td>
+                    <td>11500</td>
+                    <td>2900</td>
+                    <td>12500</td>
+                    <td>3100</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total</td>
+                    <td>31000</td>
+                    <td>7500</td>
+                    <td>38000</td>
+                    <td>9700</td>
+                    <td>38500</td>
+                    <td>9600</td>
+                    <td>42500</td>
+                    <td>11200</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>
