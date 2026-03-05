@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weather Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        input, select, button {
+            padding: 5px;
+            font-size: 16px;
+            margin: 5px;
+        }
+        #result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Weather Advice Program</h2>
+
+    <label for="weather">Weather:</label>
+    <select id="weather">
+        <option value="Sunny">Sunny</option>
+        <option value="Rainy">Rainy</option>
+    </select>
+
+    <label for="temperature">Temperature (°C):</label>
+    <input type="number" id="temperature" placeholder="Enter temperature">
+
+    <button onclick="checkWeather()">Check</button>
+
+    <p id="result"></p>
+
+    <script>
+        function checkWeather() {
+            let weather = document.getElementById("weather").value;
+            let temp = parseFloat(document.getElementById("temperature").value);
+            let result = document.getElementById("result");
+
+            if (weather === "Sunny") {
+                if (isNaN(temp)) {
+                    result.textContent = "Please enter a valid temperature.";
+                    return;
+                }
+                if (temp > 30) {
+                    result.textContent = "Wear sunscreen";
+                } else {
+                    result.textContent = "Enjoy the day";
+                }
+            } else if (weather === "Rainy") {
+                result.textContent = "Take an umbrella";
+            } else {
+                result.textContent = "Unknown weather condition";
+            }
+
+            console.log("Weather:", weather, "Temperature:", temp);
+        }
+    </script>
+
+</body>
+</html>
