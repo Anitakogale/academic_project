@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Timetable</title>
+    <style>
+        /* General body styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container styling */
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Clean borders */
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #3498db;
+            color: white;
+            font-size: 16px;
+        }
+
+        td {
+            background-color: #ecf0f1;
+        }
+
+        /* Hover effect for rows */
+        tbody tr:hover td {
+            background-color: #d6eaf8;
+            cursor: pointer;
+        }
+
+        /* Optional: Alternate row colors */
+        tbody tr:nth-child(even) td {
+            background-color: #f2f3f4;
+        }
+
+        /* Footer styling (if needed) */
+        tfoot td {
+            font-weight: bold;
+            background-color: #bdc3c7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>College Timetable</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>9:00 AM - 10:00 AM</td>
+                    <td>Mathematics</td>
+                    <td>Physics</td>
+                    <td>Chemistry</td>
+                    <td>Computer Science</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM - 11:00 AM</td>
+                    <td>Biology</td>
+                    <td>Mathematics</td>
+                    <td>Physics</td>
+                    <td>Electronics</td>
+                    <td>History</td>
+                </tr>
+                <tr>
+                    <td>11:00 AM - 12:00 PM</td>
+                    <td>Computer Science</td>
+                    <td>Chemistry</td>
+                    <td>Mathematics</td>
+                    <td>Physics</td>
+                    <td>Physical Education</td>
+                </tr>
+                <tr>
+                    <td>12:00 PM - 1:00 PM</td>
+                    <td>Lunch Break</td>
+                    <td>Lunch Break</td>
+                    <td>Lunch Break</td>
+                    <td>Lunch Break</td>
+                    <td>Lunch Break</td>
+                </tr>
+                <tr>
+                    <td>1:00 PM - 2:00 PM</td>
+                    <td>English</td>
+                    <td>Electronics</td>
+                    <td>Computer Science</td>
+                    <td>Mathematics</td>
+                    <td>Physics</td>
+                </tr>
+                <tr>
+                    <td>2:00 PM - 3:00 PM</td>
+                    <td>History</td>
+                    <td>Biology</td>
+                    <td>English</td>
+                    <td>Chemistry</td>
+                    <td>Mathematics</td>
+                </tr>
+                <tr>
+                    <td>3:00 PM - 4:00 PM</td>
+                    <td>Physics Lab</td>
+                    <td>Computer Lab</td>
+                    <td>Electronics Lab</td>
+                    <td>Biology Lab</td>
+                    <td>Sports</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
